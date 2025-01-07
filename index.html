@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8e3145c671.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- começando o header -->
+<div class="header"> 
+    <h1>Portfolio</h1>
+    <div class="optionHeader">
+        <a class="item" href="#paiHomeLink">Home</a>
+        <a class="item" href="#topicLanguageLink">Skills</a>
+        <a class="item" href="#aboutMeLink">About me</a>      
+        <a class="item" href="#projectLink">Projects</a>          
+        <a class="item" href="#contactMeLink">Contact Me</a>         
+    </div>
+
+    <div class="mobile-menu-icon">
+        <button id="menuHamburguer" onclick="menuShow()">
+            <i class="fa-solid fa-bars icon"></i>
+        </button>
+    </div>
+    
+</div>
+<!-- Div para deixar responsivo para mobile -->
+<nav class="mobile-menu">
+    <a id="item" class="item" href="#paiHomeLink">Home</a>
+    <a id="item" class="item" href="#topicLanguageLink">Skills</a>
+    <a id="item" class="item" href="#aboutMeLink">About me</a>      
+    <a id="item" class="item" href="#projectLink">Projects</a>          
+    <a id="item" class="item" href="#contactMeLink">Contact Me</a> 
+</nav>
+<!-- Fim do header -->
+
+
+    <!--Inicio do Home -->
+    <div id="paiHomeLink" style="height: 10px;"></div>
+    <div  class="paiHome">
+        <div class="home">
+            <p class="sobre">It´s me</p>
+            <p class="name">Lucas<br>Delsoci</p>
+            <p class="sobreConteudo">
+                This is my portfolio, developed in HTML, CSS, and JavaScript.<br> 
+                Below are my skills and a little about me. I hope you like it! 
+            </p>
+        </div>
+        <div class="myPicPai">
+            <div class="myPic"></div>
+        </div>  
+    </div>
+
+    <!--Fim do Home-->
+
+
+    <!--Inicio das minhas Habilidades de programação-->
+    <div id="topicLanguageLink" style="height: 80px;"></div>
+    <div  class="topicLanguage">
+        <h1 class="l">Languages</h1>
+    </div>
+    <div class="topics">
+        <div onclick="showHabilites()" class="language"> 
+            <div class="language-level"><p>HTML</p> <br> <p>Intermediary</p></div>
+            <div class="language-title"><i class="fa-brands fa-html5" style="color: #c41236;"></i></div>
+        </div>
+        <div onclick="showHabilites()" class="language"> 
+            <div class="language-level"><p>CSS</p> <br> <p>Intermediary</p></div>
+            <div class="language-title"><i class="fa-brands fa-css3-alt" style="color: #175acf;"></i></div>
+        </div>
+        <div onclick="showHabilites()" class="language "> 
+            <div class="language-level"><p>JavaScript</p> <br> <p>Basic</p></div>
+            <div class="language-title"><i class="fa-brands fa-js" style="color: #FFD43B;"></i></div>
+        </div>
+        <div onclick="showHabilites()" class="language "> 
+            <div class="language-level"><p>Java</p> <br> <p>Intermediary</p></div>
+            <div class="language-title"><i class="fa-brands fa-java"></i></div>
+        </div>
+        <div onclick="showHabilites()" class="language "> 
+            <div class="language-level"><p>Python</p> <br> <p>Basic</p></div>
+            <div class="language-title"><i class="fa-brands fa-python"></i></div>
+        </div>
+        <div onclick="showHabilites()" class="language "> 
+            <div class="language-level"><p>Excel</p> <br> <p>Basic</p></div>
+            <div class="language-title"><i class="fa-regular fa-file-excel" style="color: #226c14;"></i></div>
+        </div>
+        <div onclick="showHabilites()" class="language"> 
+            <div class="language-title spanish"><h1>English</h1> </div>
+            <div class="language-level"><p>Intermediary</p></div>
+        </div>
+        <div onclick="showHabilites()" class="language"> 
+            <div class="language-title spanish"><h1>Spanish</h1> </div>
+            <div class="language-level"> <p>Basic</p></div>   
+        </div>
+    </div>
+    
+
+    <!--Fim das minhas h=Habilidades de programação-->
+
+    <!--Inicio do Sobre mim-->
+    <div id="aboutMeLink" style="height: 10px;"></div>
+    <div class="aboutMe">
+        <div class="aboutMeTitulo">
+            <h1>About me</h1>
+        </div>
+
+        <div class="aboutMeConteudo">
+            <h1>A little about me </h1>
+            <br>
+            <p>I am a student at Universidade Presbiteriana Mackenzie, currently in my third semester studying
+                Information Systems. I am a dedicated and committed person, always seeking to solve problems and
+                adapt to new challenges with the aim of making things happen. My goal is to become a proficient
+                full stack developer. I am actively looking for an internship or junior developer position to
+                start my career in this field.</p>
+        </div>
+    </div>
+
+    <!--Fim Do SobreMim-->
+
+    <!--Inicio dos "meus projetos"-->
+    <div id="projectLink" style="height: 80px;"></div>
+    <div class="projects">
+        <div class="projectIntro">
+            <h1>projects</h1>
+        </div>
+
+        <div class="verMaisPai">
+            <div class="verMais"><div class="banner">Click in "My Repositorio gitHub" </div></div>
+            <div class="verMais"><div class="banner">Click in "My Repositorio gitHub"</div></div>
+            <div class="verMais"><div class="banner">Click in "My Repositorio gitHub"</div></div>
+        </div>
+        <div class="cliqueAquiGit" onclick="aoClicar()">
+            <p>My Repositorio gitHub</p>
+            <i class="fa-brands fa-github" style="color: #1d458c;"></i>
+        </div>
+    </div>
+
+    <!--Fim dos meus projetos-->
+
+    <!--Inicio do contact Me-->
+    <div id="contactMeLink" class="contactMe">
+        <div class="intro"><h1>Contact Me</h1></div>
+        <div class="contato">
+            <h1>Contact Me</h1>
+            <p>If you like my portfolio and want to discuss job opportunities or projects, I'm happy to chat!
+                You can contact me via my email, LinkedIn or Instagram by clicking on the icons below. I am available to discuss how I can contribute my knowledge and skills to your projects or initiatives.
+                Looking forward to hearing from you and being part of your team.</p>
+        </div>
+
+        <div class="link-contato">
+            <div onclick="aoClicarInstagram()" class="icon-contato"><i class="fa-brands fa-instagram"></i></div>
+            <div onclick="aoClicarLinkedin()" class="icon-contato"><i class="fa-brands fa-linkedin" style="color: #2967d1;"></i></div>
+            <div onclick="aoClicarEmail()" class="icon-contato"><i class="fa-solid fa-envelope"></i></div>
+        </div>
+        
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>Copyright 2024 - Developed Lucas Delsoci Cardoso</p>
+        </div>
+        <div class="back-home"> <a href="#paiHomeLink"><i class="fa-solid fa-up-long" style="color: #ffffff;"></i></a></div>
+    </div>
+
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>

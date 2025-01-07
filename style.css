@@ -1,0 +1,501 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    ;
+    
+}
+body{
+    background-color: #23232e;
+}
+/*Começo do site -Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(105, 105, 105, 0.3);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-around;
+    z-index: 1000;
+   
+}
+
+.header h1 {
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: rgb(143, 8, 8);
+}
+
+.optionHeader a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.optionHeader a href{
+    transition: 3s;
+}
+
+.optionHeader a:hover{
+
+    border: 1.3px solid rgb(143, 8, 8);
+    border-radius: 10px;
+    color: rgb(143, 8, 8);
+}
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/* Final Header */
+
+/*começo home */
+
+.paiHome{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: 7% auto 7% auto; 
+    flex-wrap: wrap;
+    justify-content: spa;
+    
+}
+
+.home{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;  
+    gap: 10px;
+    
+}
+
+.home .sobre{
+    color: white;
+    opacity: 0.5;
+    font-size: 50px;
+}
+
+.home .name{
+    color: rgb(143 , 8 ,8);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.home .sobreConteudo{
+    color: white;
+    font-size: larger;
+   
+}
+
+.myPicPai{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.myPic {
+    border: solid white 2px;
+    display: flex;
+    margin-right: 10%;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%; 
+    background-image: url('myPic.jpeg');
+    background-size: cover;
+    background-position: center;
+    animation: imganimation 3s infinite;
+}
+
+@keyframes imganimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Final Home */
+
+/* Inicio my programation languages */
+
+.topicLanguage{
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 3px rgb(143, 8, 8);
+    color: white;
+}
+
+.topics {
+    
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 5% auto auto auto;
+}
+
+.topics .language {
+    width: 250px; /* Defina uma largura fixa */
+    height: 200px;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.topics .language-level {
+    display: none;
+    margin: 0;
+}
+
+.topics .language-title {
+    display: flex;
+    color: blue;
+    font-size: 10vh;
+}
+
+.language-title h1{
+    font-size: 25px;
+}
+
+.topics .language:hover{
+   
+    background-color: rgb(143, 8, 8);
+    .language-level{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .language-title{
+        display: none;
+        padding: auto;  
+    }
+}
+
+.language h1{
+    color: white;
+}
+
+
+/*Finish My programation Languages */
+
+/* Inicio About Me */
+
+.aboutMe{
+    margin-top: 150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMeTitulo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: solid rgb(143, 8, 8) 3px;
+    width: max-content;
+}
+
+.aboutMeConteudo{
+    width: 80%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    margin: 100px auto 0 auto;
+    height: 130px;
+
+}
+.aboutMeConteudo h1{
+    color: rgb(143, 8, 8);
+}
+.aboutMeConteudo p{
+    color: white;
+}
+
+/* Final About Me */
+
+/* Inicio Projetos */
+ 
+.projects{
+    margin: 0 auto 200px auto;
+    flex-wrap: wrap;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .projectIntro{
+    margin-bottom: 100px;
+    display: flex;
+    color: white;
+    width: max-content;
+    border-bottom: 3px solid rgb(143 , 8 ,8);
+}
+
+.projects .verMaisPai{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.projects .verMais{
+    box-shadow: 5px 5px 5px 5px white;
+    width: 300px;
+    height: 200px;
+    background-color: #d9d9d9; /* Cor de fundo cinza claro */
+    position: relative;
+    border-radius: 10px; /* Cantos arredondados */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+}
+
+.projects .verMais .banner{
+    position: absolute;
+    width: 150%;
+    height: 30px;
+    background-color: rgb(143 , 8 ,8); /* Cor da faixa */
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    font-weight: bold;
+}
+
+.cliqueAquiGit {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: 95px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(247, 244, 244 , 0.6);
+}
+
+.cliqueAquiGit i{
+    font-size: 60px;
+    cursor: pointer;
+}
+.cliqueAquiGit p{
+    color: rgba(247, 244, 244 , 0.8);
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+/* Final Projects */
+
+/* Inicio Contact Me */
+
+.contactMe{
+    margin: 0 auto ;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+.contactMe .intro{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    border-bottom: 3px solid rgb(143 , 8 ,8);
+}
+.contato{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 100px;
+
+}
+.contato h1{
+    color: rgb(143 , 8 ,8);
+
+}
+
+.contato p{
+    padding-top: 13px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.link-contato{
+    margin-top: 4%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icon-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 3px red solid ;
+}
+.icon-contato i{
+    font-size: 30px;
+    color: white;
+}
+
+.copyright{
+    margin: 5% auto 7% auto;
+    font-size: medium;
+    color: white;
+    opacity: 0.7;
+    display: flex;
+}
+
+
+/* Final Contact me */
+
+.back-home{
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    font-size: 5vh;
+}
+/* Inicio Design Resposivo */
+
+@media screen and (max-width: 800px) {
+    /* Esconda o menu de navegação padrão */
+    .optionHeader {
+        display: none;
+    }
+
+    /* Exiba o ícone do menu móvel */
+    .mobile-menu-icon {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        position: relative; /* Mantido para posicionamento */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+    
+
+    .mobile-menu {
+        background-color: rgba(105, 105, 105, 0.3);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed; /* Altere para fixo */
+        top: 60px; /* Ajuste conforme necessário, considerando a altura do header */
+        right: 10px; /* Ajuste conforme necessário */
+        width: 100%; /* Ajuste conforme necessário */
+        z-index: 999; /* Garantir que o menu esteja sobre outros elementos */
+    }
+
+    .mobile-menu .item {
+        display: block;
+        padding-top: 1rem;
+        text-decoration: none;
+        color: white;
+        transition: bottom 1s;
+    }
+    
+
+    /* Exiba o menu quando a classe 'open' estiver presente */
+    .mobile-menu.open {
+        display: flex;
+    }
+
+     /* alteração home */
+
+     .myPicPai{
+        display: none;
+       
+     }
+     
+
+    .paiHome{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .home{
+        width: 100%;
+    }
+
+    .verMais{
+        margin-bottom: 15%;
+    } 
+
+    .home .sobre{
+        font-size: 25px;
+    }
+    
+    .home .name{
+        font-size: 3rem;
+    }
+
+    .language .language-title{
+        font-size: 5vh;
+    }
+
+    .back-home{
+        right: 40px;
+        bottom: 40px;
+        font-size: 3vh;
+    }
+
+}
+   
+    
+    
+    
+
+
+
